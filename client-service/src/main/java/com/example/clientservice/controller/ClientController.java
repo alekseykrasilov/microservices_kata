@@ -19,4 +19,9 @@ public class ClientController {
     public List<Book> getAllBooks() {
         return clientService.getAllBooks();
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "Service1";
+    }
 }
